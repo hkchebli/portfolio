@@ -4,8 +4,10 @@
     margin: 0;
 }
 
+
 body {
-    background-color: #d9dcd6;
+    position: relative;
+    background-color: gray;
     color: #000000;
     
 }
@@ -20,10 +22,11 @@ header {
 header h1 {
     text-align: center;
     color: black;
-    text-decoration: underline;
-    text-decoration-color: rgb(54, 11, 78);
+    
     font-size: 60px;
 }
+
+
 
 header h1 .seo {
     color: black;
@@ -46,32 +49,48 @@ header h3 ul li {
 }
 
 a {
-    color: gray;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
+.edu, .tech, .proj, .pro {
+transition: transform 600ms;
+}
+.edu:hover, .tech:hover, .proj:hover, .pro:hover {
+    transform: translateY(-10px);
+  }
  
+
 
 p {
     font-size: 16px;
 }
 
 .hero {
-    height: 800px;
+    height: 300px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
 }
-
-.profile-pic {
-    display: block;
-    margin: 4%;
-    align-content: center;
-    justify-content: center;
+section{ 
+position: relative;
 }
-    
 
+.profile-pic img {
+    display: block;
+    margin: 2% 45% ;
+    position: absolute;
+    object-position: center ;
+    border-radius: 50%;
+    
+    border: 5px solid black;
+}
+
+.profile-pic img:hover{
+    transition: transform 600ms;
+    transform:scale(2);
+}
 
 .center{
     align-content: center;
@@ -84,58 +103,40 @@ p {
 }
 
 main {
-    width: 75%;
+    width: 50%;
     display: inline-block;
-    margin-left: 20px;
-    
+    margin-left: 20px;   
 }
 
-.benefits {
-    margin-right: 20px;
+.Education, .Projects, .Professional-Experience, .Technical-Skills{ 
+    margin: 2%;
     padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
+    height: 200px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-.benefit{
-    margin-bottom: 32px;
+    background-color: rgb(15, 167, 167);
     color: #ffffff;
+    transition: background-color 1s;
 }
 
-.benefit-h3 {
-    margin-bottom: 10px;
-    text-align: center;
+.Education:hover, .Projects:hover, .Professional-Experience:hover, .Technical-Skills:hover{
+    background-color: #004369;
 }
 
-.benefit-img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+.Education:focus, .Projects:focus, .Professional-Experience:focus, .Technical-Skills :focus{
+    background-color: black;
+  transition: none;
 }
 
-
-.social-media-marketing, .online-reputation-management, .search-engine-optimization{ 
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+.Education:active, .Projects:active, .Professional-Experience:active, .Technical-Skills :active{
+    background-color: black;
+  transition: none;
 }
-
 
 img {
     max-height: 200px;
 }
 
-h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+
 
 .footer {
     padding: 30px;
@@ -148,3 +149,27 @@ h2 {
 .footer h2 {
     font-size: 20px;
 }
+
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 60px;
+  }
+  .waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
