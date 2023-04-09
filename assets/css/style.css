@@ -1,29 +1,29 @@
 * {
+    
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 
-body {
-    position: relative;
-    background-color: gray;
+body { 
     color: #000000;
     
 }
 
 header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Brush Script MT','Brush Script Std', 'cursive';
     background-color: rgb(15, 167, 167);
     color: #ffffff;
+    
 }
 
 header h1 {
     text-align: center;
     color: black;
-    
-    font-size: 60px;
+    background-color: rgb(15, 167, 167);
+    font-size: 80px;
 }
 
 
@@ -36,7 +36,7 @@ h3 {
     margin: 2%;
     text-align: center;
     
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Brush Script MT','Brush Script Std', 'cursive';
     font-size: 20px;
 }
 
@@ -57,29 +57,47 @@ transition: transform 600ms;
 }
 .edu:hover, .tech:hover, .proj:hover, .pro:hover {
     transform: translateY(-10px);
+    text-decoration: underline;
+    
   }
  
 
 
 p {
+    margin: 1%;
     font-size: 16px;
 }
 
-.hero {
-    height: 300px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
+.categories {
+    background-image: url("../images/background.jpg");
+    background-size: auto;
     background-position: center;
+    margin:15% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 100%;
 }
-section{ 
-position: relative;
+
+.categories ul li {
+    margin: 2%;
+    list-style-type: square;
+      
+}
+.categories a{
+    text-decoration: underline;
+    color: blue;
+}
+
+.categories a :focus{
+    color: black;
 }
 
 .profile-pic img {
     display: block;
-    margin: 2% 45% ;
+    margin: 7% 45% ;
     position: absolute;
     object-position: center ;
     border-radius: 50%;
@@ -89,7 +107,7 @@ position: relative;
 
 .profile-pic img:hover{
     transition: transform 600ms;
-    transform:scale(2);
+    transform:scale(1.8);
 }
 
 .center{
@@ -108,47 +126,58 @@ main {
     margin-left: 20px;   
 }
 
+.Professional-Experience img{
+    transform:scale(0.7);
+}
+
+.Technical-Skill img {
+    transform:scale(0.2);
+}
+
 .Education, .Projects, .Professional-Experience, .Technical-Skills{ 
-    margin: 2%;
+    margin: 25% 2% 2% 2%;
+    justify-content:space-around;
     padding: 20px;
-    height: 200px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(15, 167, 167);
+    height: 750px;
+    border:rgb(168, 117, 75) dashed 5px;
+    font-family:'Brush Script MT','Brush Script Std', 'cursive';
+    background: linear-gradient(110deg, rgba(15, 167, 167, 0.664) 60%, rgba(209, 141, 86, 0.692) 60%);
     color: #ffffff;
     transition: background-color 1s;
+    background-size:cover;
 }
 
 .Education:hover, .Projects:hover, .Professional-Experience:hover, .Technical-Skills:hover{
-    background-color: #004369;
+    background: linear-gradient(110deg, rgb(15, 167, 167) 60%, rgb(209, 141, 86) 60%);
+    transition: transform 600ms;
+    transform:scale(1.2);
+    background:cross-fade(10);
 }
 
 .Education:focus, .Projects:focus, .Professional-Experience:focus, .Technical-Skills :focus{
     background-color: black;
-  transition: none;
+    transition: none;
 }
 
 .Education:active, .Projects:active, .Professional-Experience:active, .Technical-Skills :active{
     background-color: black;
-  transition: none;
+    transition: none;
 }
 
 img {
     max-height: 200px;
 }
 
-
-
 .footer {
     padding: 30px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Brush Script MT','Brush Script Std', 'cursive';
     text-align: center;
     color: black;
+    background-color:rgb(15, 167, 167) ;
 }
 
-.footer h2 {
-    font-size: 20px;
-}
+
 
 .waviy {
     position: relative;
@@ -165,6 +194,35 @@ img {
     animation-delay: calc(.1s * var(--i));
     
   }
+
+  .animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    rgb(168, 117, 75),
+    #ff0000 29%,
+    #030001 67%,
+    #b91a1a 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 25% auto;
+  color: #fff;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 25px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 25% center;
+  }
+}
   @keyframes waviy {
     0%,40%,100% {
       transform: translateY(0)
