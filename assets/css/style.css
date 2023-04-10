@@ -27,7 +27,6 @@ header h1 {
 }
 
 
-
 header h1 .seo {
     color: black;
 }
@@ -179,18 +178,18 @@ img {
 
 
 
-.waviy {
+.drop-header {
     position: relative;
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
     font-size: 60px;
   }
-  .waviy span {
+  .drop-header span {
     font-family: 'Alfa Slab One', cursive;
     position: relative;
     display: inline-block;
     color: #fff;
     text-transform: uppercase;
-    animation: waviy 1s infinite;
+    animation: drop-header 1s infinite;
     animation-delay: calc(.1s * var(--i));
     
   }
@@ -223,7 +222,7 @@ img {
     background-position: 25% center;
   }
 }
-  @keyframes waviy {
+  @keyframes drop-header {
     0%,40%,100% {
       transform: translateY(0)
     }
