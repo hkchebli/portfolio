@@ -14,8 +14,9 @@
 * I add a hover and focus animation to categories' boxes that scale them to be bigger and cause a fade to make them more clear and show the user where he's looking
 * I add logos that represent each category in the boxes
 * I add the corresponding information to each category box
-* I create afooter with a nice message
+* I create a footer with a nice message
 * I add an amazing animation to the footer 
+* I create a jump links for the nav bar to jusmp to the corresponding section
 
 ## Problems I faced
 * I found it difficult to differentiate between class and id
