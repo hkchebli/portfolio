@@ -39,18 +39,14 @@ h3 {
     font-size: 20px;
 }
 
-section .contact{
-    position: absolute;
-    font-size: 20px;
-    text-align: center;
-    display: center;
+.contact{
     display: inline-block;
-    margin-right: 400px;
+    margin-left: 800px;
     justify-content: center;
 }
 
 header h3 ul li {
-    display: inline-block;
+    text-align: center;
     margin-left: 25px;
     justify-content: center;
 }
