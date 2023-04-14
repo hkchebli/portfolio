@@ -17,6 +17,7 @@
 * I create a footer with a nice message
 * I add an amazing animation to the footer 
 * I create a jump links for the nav bar to jusmp to the corresponding section
+* I create section for contact information above the footer
 
 ## Problems I faced
 * I found it difficult to differentiate between class and id

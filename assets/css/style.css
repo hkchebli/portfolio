@@ -32,17 +32,23 @@ header h1 .seo {
 }
 
 h3 {
+    display: inline;
     margin: 2%;
     text-align: center;
-    
     font-family: 'Brush Script MT','Brush Script Std', 'cursive';
     font-size: 20px;
 }
 
-.contact{
-    display: inline-block;
+.Contact{
+  
     margin-left: 800px;
     justify-content: center;
+}
+
+header h3 ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 550px ;
 }
 
 header h3 ul li {
@@ -55,10 +61,10 @@ a {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
-.edu, .tech, .proj, .pro {
+.edu, .tech, .proj, .pro, .cont {
 transition: transform 600ms;
 }
-.edu:hover, .tech:hover, .proj:hover, .pro:hover {
+.edu:hover, .tech:hover, .proj:hover, .pro:hover, .cont:hover{
     transform: translateY(-10px);
     text-decoration: underline;
     
